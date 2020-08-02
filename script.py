@@ -17,9 +17,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Color setup for chart
-chart_colors = ['#CFC8A3', '#ED7272']
-sns.set_palette(chart_colors)
+chart_colors = ['#CFAA4E', '#C70039']
 sns.palplot(sns.color_palette())
+sns.set(font_scale=2.3, palette=chart_colors)
 
 # Create function that will put bar values as text on the chart
 # Credit: https://stackoverflow.com/a/56780852
@@ -148,10 +148,7 @@ count_by_system = sns.catplot(x='SYSTEM_FLAG',
 
 # Chart customization
 show_values_on_bars(count_by_system.ax, fontsize=30, heightValue=1)
-plt.title('Reports in Discoverer vs. Argos', fontdict={'fontsize':30, 'weight':'bold'})
-plt.text(-0.45, 1900, 'Reporting System',
-         fontsize=20)
-plt.legend(['Discoverer', 'Argos'], loc=2, fontsize=20)
+plt.title('# of Unique Reports in Discoverer vs. Argos', fontdict={'fontsize':30, 'weight':'bold'})
 
 plt.xlabel("Reporting System",size=25,weight='bold')
 plt.xticks(size = 18, weight = 'bold')
@@ -180,13 +177,11 @@ count_by_eul = sns.catplot(x="EUL",
                 legend_out=False)
 
 # Chart customization
-show_values_on_bars(count_by_eul.ax, fontsize=30, heightValue=1)
-plt.title('Reports in Discoverer vs. Argos, by Discoverer folder structure', fontdict={'fontsize':30, 'weight':'bold'})
-plt.text(-0.45, 550, 'Reporting System',
-         fontsize=20)
+show_values_on_bars(count_by_eul.ax, fontsize=25, heightValue=1)
+plt.title('# of Unique Reports in Discoverer vs. Argos, \n by Discoverer folder structure', fontdict={'fontsize':30, 'weight':'bold'})
 plt.legend(loc=2, fontsize=20)
 
-plt.xlabel("End User Layer (EUL)",size=25,weight='bold')
+plt.xlabel("Discoverer End User Layer (EUL)",size=25,weight='bold')
 plt.xticks(size = 18, weight = 'bold')
 
 plt.ylabel("# of Unique Reports",size=25,weight='bold')
@@ -217,12 +212,12 @@ count_by_path = sns.catplot(x="ARGOS_PATH",
 # Chart customization
 show_values_on_bars(count_by_path.ax, fontsize=22, heightValue=1)
 count_by_path.set_xticklabels(rotation=90)
-plt.title('Reports in Discoverer vs. Argos, by Argos folder structure', fontdict={'fontsize':30, 'weight':'bold'})
+plt.title('# of Unique Reports in Discoverer vs. Argos, \n by Argos folder structure', fontdict={'fontsize':30, 'weight':'bold'})
 plt.text(-0.25, 250, 'Reporting System',
          fontsize=20)
 plt.legend(loc=2, fontsize=20)
 
-plt.xlabel("Argos Path",size=25,weight='bold')
+plt.xlabel("Argos Folder Path",size=25,weight='bold')
 plt.xticks(size = 18, weight = 'bold')
 
 plt.ylabel("# of Unique Reports",size=25,weight='bold')
