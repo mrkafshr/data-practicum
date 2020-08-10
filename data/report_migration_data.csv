@@ -1225,7 +1225,7 @@
 "COMP","COMP","Enrolled Students W County","Undergraduate Level Students","Student.Registration","Course Enrollment Status Analysis - with Address Info","CSV Report","Addresses Report","N",,"N"
 "COMP","COMP","Class Lists","200650 and Prior","Student.Registration","Course Enrollment Status Analysis","CSV Report","Class List Report","N",,"N"
 "COMP","COMP","Class Lists","200680 & Forward All Courses for a Term","Student.Registration","Course Enrollment Status Analysis","CSV Report","Class List Report","N",,"N"
-"COMP","COMP","Enrollment for Advising","Area of Interest by term","Student.Demographic","Student Attribute Analysis","CSV Report","Registered Student Attribute Report","N",,"N"
+"COMP","COMP","Enrollment for Advising","Area of Interest by term","Student.Demographics","Student Attribute Analysis","CSV Report","Registered Student Attribute Report","N",,"N"
 "SATURN","COMP","IDEA Data New","With Extra Data","Student.IDEA/Course Evaluations","IDEA Survey Analysis","CSV Report","Course by Division Report","N",,"N"
 "SATURN","COMP","CENSUS TEMPLATE 2010","ORIGINAL_TOTAL_CREDITS","Student.Academic History","Student Academic Status Analysis","CSV Report","Credits Earned Report","N",,"N"
 "SATURN","LOSASSOJ","Class List","Sheet 1","Student.Registration","Course Enrollment Status Analysis","CSV Report","Class List Report","N",,"N"
